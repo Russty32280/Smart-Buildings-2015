@@ -9,7 +9,6 @@ import Adafruit_DHT
 import time
 import RPi.GPIO as io
 
-
 io.setmode(io.BCM)
 
 Channel3_GPIO = 25
@@ -56,13 +55,14 @@ def xmpp_send(toAddr,myMsg,**key):
 
 def ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode):
 	if channelId == '1':
-		humidity, temperature = Adafruit_DHT.read_retry(Channel1_Sensor, Channel1_GPIO)
+		humidity, temperature = Adafruit_DHT.read(Channel1_Sensor, Channel1_GPIO)
 		if humidity is not None and temperature is not None:
 			print 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)
 			data = str(humidity) + ":" + str(temperature)
 			errorCode = 0
 		else:
 			print 'Failed to get a reading from the DHT11'
+			data = ''
 			errorCode = 1
 
 	if channelId == '2':
@@ -114,6 +114,34 @@ def ReadTransducerSampleDataFromMultipleChannelsOfATIM(channelId, timeout, sampl
 	return{'channelId':channelId, 'data':data, 'errorCode':errorCode}
 
 
+def ReadTransducerBlockDataFromAChannelOfATIM(channelId, timeout, numberOfSamples, sampleInterval, startTime):
+	time.sleep(int(startTime))
+	BlockData = ""
+	samplingMode = '5'
+	for num in range(1,int(numberOfSamples)):
+		BlockData = BlockData + str(ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode)['data']) + ';'
+		time.sleep(int(sampleInterval))
+	errorCode = 0
+	return{'errorCode':errorCode, 'data':BlockData}
+
+
+def ReadTransducerBlockDataFromMultipleChannelsOfATIM(channelId, timeout, numberOfSamples, sampleInterval, startTime):
+	channelIds = channelId.split(";")
+	time.sleep(int(startTime))
+	samplingMode = '5'
+	BlockData = ['']*len(channelIds)
+	for SampleNum in range(0,int(numberOfSamples)):
+		for ChanNum in range(0,len(channelIds)):
+		#	print ChanNum
+			BlockData[ChanNum] = BlockData[ChanNum] + ";" + str(ReadTransducerSampleDataFromAChannelOfATIM(channelIds[ChanNum], timeout, samplingMode)['data']) 
+		
+		time.sleep(int(sampleInterval))
+	errorCode = 0
+	data = ''
+	for ChanNum in range(0,len(channelIds)):
+		data = data + '{' + BlockData[ChanNum] + '}' 
+	return{'errorCode':errorCode, 'data':data}
+
 
 #while sensor_choice!=0:
 #
@@ -143,6 +171,11 @@ def MessageParse(msg):
 	timId =  parse[2]
 	channelId =  parse[3]
 	timeout =  parse[4]
+	if functionId == '7212' or '7214':
+		numberOfSamples = parse[5]
+		sampleInterval = parse[6]
+		startTime = parse[7]
+		return {'functionId':functionId, 'ncapId':ncapId, 'timId':timId, 'channelId':channelId, 'timeout':timeout, 'numberOfSamples':numberOfSamples, 'sampleInterval':sampleInterval, 'startTime':startTime}
 	samplingMode = parse[5]
 	if functionId == '7217':
 		dataValue = parse[6]
@@ -216,9 +249,19 @@ class EchoBot(sleekxmpp.ClientXMPP):
 		response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
 		xmpp_send(str(msg['from']), response)
 
+	   if MSG['functionId'] == '7212':
+		SensorData = ReadTransducerBlockDataFromAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
+		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + MSG['channelId'] + str(SensorData['data'])
+		xmpp_send(str(msg['from']), response)
+
 	   if MSG['functionId'] == '7213':
 		SensorData = ReadTransducerSampleDataFromMultipleChannelsOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode']) 		
 		response =  MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data']) 
+		xmpp_send(str(msg['from']), response)
+
+	   if MSG['functionId'] == '7214':
+		SensorData = ReadTransducerBlockDataFromMultipleChannelsOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
+		response =  MSG['functionId'] +  ',' + MSG['ncapId'] + ',' + MSG['timId'] + MSG['channelId'] + str(SensorData['data'])
 		xmpp_send(str(msg['from']), response)
 
 if __name__ == '__main__':
