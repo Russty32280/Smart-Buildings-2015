@@ -12,7 +12,7 @@ import RPi.GPIO as io
 
 io.setmode(io.BCM)
 
-Channel3_GPIO = 23
+Channel3_GPIO = 25
 
 io.setup(Channel3_GPIO, io.OUT)
 
@@ -77,6 +77,21 @@ def ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode)
 
 	return {'errorCode':errorCode, 'data':data}
 
+def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, dataValue):
+	print "Write Transducer Recieved"
+	if channelId == '3':
+		if dataValue == '1':
+			io.output(Channel3_GPIO, True)
+			ErrorCode = 0
+			print 'LED On'
+		elif dataValue == '0':
+			io.output(Channel3_GPIO, False)
+			ErrorCode = 0
+			print 'LED OFF'
+		else:
+			ErrorCode = 1 
+	return {'errorcode':ErrorCode}
+
 
 
 #while sensor_choice!=0:
@@ -108,6 +123,9 @@ def parsing(msg):
 	channelId =  parse[3]
 	timeout =  parse[4]
 	samplingMode = parse[5]
+	if functionId == '7217':
+		dataValue = parse[6]
+		return {'functionId':functionId, 'ncapId':ncapId, 'timId':timId, 'channelId':channelId, 'timeout':timeout, 'samplingMode':samplingMode, 'dataValue':dataValue}
 	#errorCode = 1
 	return {'functionId':functionId, 'ncapId':ncapId, 'timId':timId, 'channelId':channelId, 'timeout':timeout, 'samplingMode':samplingMode} 
 
@@ -171,6 +189,12 @@ class EchoBot(sleekxmpp.ClientXMPP):
 	        SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
 		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 		xmpp_send(str(msg['from']), response)
+
+	   if MSG['functionId'] == '7217':
+		ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
+		response = MSG['functionId']+ ',' + str(ErrorCode['errorcode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
+		xmpp_send(str(msg['from']), response)
+
 
 if __name__ == '__main__':
     # Setup the command line arguments.
