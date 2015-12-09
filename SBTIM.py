@@ -77,21 +77,6 @@ def ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode)
 
 	return {'errorCode':errorCode, 'data':data}
 
-def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, dataValue):
-	print "Write Transducer Recieved"
-	if channelId == '3':
-		if dataValue == '1':
-			io.output(Channel3_GPIO, True)
-			ErrorCode = 0
-			print 'LED On'
-		elif dataValue == '0':
-			io.output(Channel3_GPIO, False)
-			ErrorCode = 0
-			print 'LED OFF'
-		else:
-			ErrorCode = 1 
-	return {'errorCode':ErrorCode}
-
 
 def ReadTransducerSampleDataFromMultipleChannelsOfATIM(channelId, timeout, samplingMode):
 	ChannelIDS = channelId.split(";")
@@ -118,7 +103,7 @@ def ReadTransducerBlockDataFromAChannelOfATIM(channelId, timeout, numberOfSample
 	time.sleep(int(startTime))
 	BlockData = ""
 	samplingMode = '5'
-	for num in range(1,int(numberOfSamples)):
+	for num in range(0,int(numberOfSamples)):
 		BlockData = BlockData + str(ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode)['data']) + ';'
 		time.sleep(int(sampleInterval))
 	errorCode = 0
@@ -141,6 +126,35 @@ def ReadTransducerBlockDataFromMultipleChannelsOfATIM(channelId, timeout, number
 	for ChanNum in range(0,len(channelIds)):
 		data = data + '{' + BlockData[ChanNum] + '}' 
 	return{'errorCode':errorCode, 'data':data}
+
+
+
+
+
+def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, dataValue):
+        print "Write Transducer Recieved"
+        if channelId == '3':
+                if dataValue == '1':
+                        io.output(Channel3_GPIO, True)
+                        ErrorCode = 0
+                        print 'LED On'
+                elif dataValue == '0':
+                        io.output(Channel3_GPIO, False)
+                        ErrorCode = 0
+                        print 'LED OFF'
+                else:
+                        ErrorCode = 1
+        return {'errorCode':ErrorCode}
+
+
+def WriteTransducerBlockDataToAChannelOfATIM(channelId, timeout, numberOfSamples, sampleInterval, startTime, dataValue):
+	data = dataValue.split(";")
+	time.sleep(int(startTime))
+	samplingMode = '5'
+	for num in range(0,int(numberOfSamples)):
+		errorCode = WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, data[num])
+		time.sleep(int(sampleInterval))
+	return{'errorCode':errorCode}
 
 
 #while sensor_choice!=0:
@@ -171,10 +185,13 @@ def MessageParse(msg):
 	timId =  parse[2]
 	channelId =  parse[3]
 	timeout =  parse[4]
-	if functionId == '7212' or '7214':
+	if functionId == '7212' or '7214' or '7218':
 		numberOfSamples = parse[5]
 		sampleInterval = parse[6]
 		startTime = parse[7]
+		if functionId == '7218':
+			dataValue = parse[8]
+			return {'functionId':functionId, 'ncapId':ncapId, 'timId':timId, 'channelId':channelId, 'timeout':timeout, 'numberOfSamples':numberOfSamples, 'sampleInterval':sampleInterval, 'startTime':startTime, 'dataValue':dataValue}
 		return {'functionId':functionId, 'ncapId':ncapId, 'timId':timId, 'channelId':channelId, 'timeout':timeout, 'numberOfSamples':numberOfSamples, 'sampleInterval':sampleInterval, 'startTime':startTime}
 	samplingMode = parse[5]
 	if functionId == '7217':
@@ -244,14 +261,9 @@ class EchoBot(sleekxmpp.ClientXMPP):
 		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 		xmpp_send(str(msg['from']), response)
 
-	   if MSG['functionId'] == '7217':
-		ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
-		response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
-		xmpp_send(str(msg['from']), response)
-
 	   if MSG['functionId'] == '7212':
 		SensorData = ReadTransducerBlockDataFromAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
-		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + MSG['channelId'] + str(SensorData['data'])
+		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 		xmpp_send(str(msg['from']), response)
 
 	   if MSG['functionId'] == '7213':
@@ -261,8 +273,20 @@ class EchoBot(sleekxmpp.ClientXMPP):
 
 	   if MSG['functionId'] == '7214':
 		SensorData = ReadTransducerBlockDataFromMultipleChannelsOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
-		response =  MSG['functionId'] +  ',' + MSG['ncapId'] + ',' + MSG['timId'] + MSG['channelId'] + str(SensorData['data'])
+		response =  MSG['functionId'] +  ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' +  str(SensorData['data'])
 		xmpp_send(str(msg['from']), response)
+
+
+           if MSG['functionId'] == '7217':
+                ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
+                response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
+                xmpp_send(str(msg['from']), response)
+
+	   if MSG['functionId'] == '7218':
+		ErrorCode = WriteTransducerBlockDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'], MSG['dataValue'])
+		response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
+		xmpp_send(str(msg['from']), response)
+
 
 if __name__ == '__main__':
     # Setup the command line arguments.
