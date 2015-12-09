@@ -90,7 +90,28 @@ def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, 
 			print 'LED OFF'
 		else:
 			ErrorCode = 1 
-	return {'errorcode':ErrorCode}
+	return {'errorCode':ErrorCode}
+
+
+def ReadTransducerSampleDataFromMultipleChannelsOfATIM(channelId, timeout, samplingMode):
+	ChannelIDS = channelId.split(";")
+
+	data = ""
+	n = 1
+	FirstValue = 0
+	for ChannelID in ChannelIDS:
+		DATA = ReadTransducerSampleDataFromAChannelOfATIM(ChannelID, timeout, samplingMode)
+		if FirstValue == 0:
+			data = data + str(DATA['data'])
+			FirstValue = 1
+		elif n==len(ChannelIDS):
+			data = data + ";" + str(DATA['data'])
+		else:
+			data = data + ";" + str(DATA['data'])
+		n = n+1
+		print data
+	errorCode = 0
+	return{'channelId':channelId, 'data':data, 'errorCode':errorCode}
 
 
 
@@ -114,7 +135,7 @@ def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, 
 
 ##############################################################
 
-def parsing(msg):
+def MessageParse(msg):
 	stringy = str( msg['body'])
 	parse = stringy.split(",")
 	functionId = parse[0]
@@ -182,7 +203,7 @@ class EchoBot(sleekxmpp.ClientXMPP):
         """
         if msg['type'] in ('chat', 'normal'):
 	   print 'Recieved Message'
-	   MSG = parsing(msg)
+	   MSG = MessageParse(msg)
 
 	   if MSG['functionId'] == '7211':
 		print 'Recieved a 7211 Message'
@@ -192,9 +213,13 @@ class EchoBot(sleekxmpp.ClientXMPP):
 
 	   if MSG['functionId'] == '7217':
 		ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
-		response = MSG['functionId']+ ',' + str(ErrorCode['errorcode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
+		response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
 		xmpp_send(str(msg['from']), response)
 
+	   if MSG['functionId'] == '7213':
+		SensorData = ReadTransducerSampleDataFromMultipleChannelsOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode']) 		
+		response =  MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data']) 
+		xmpp_send(str(msg['from']), response)
 
 if __name__ == '__main__':
     # Setup the command line arguments.
