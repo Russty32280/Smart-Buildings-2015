@@ -3,6 +3,7 @@
 import sys
 import logging
 import getpass
+import sleekxmpp
 from optparse import OptionParser
 import Adafruit_DHT
 import time
@@ -58,7 +59,7 @@ def ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode)
 		humidity, temperature = Adafruit_DHT.read_retry(Channel1_Sensor, Channel1_GPIO)
 		if humidity is not None and temperature is not None:
 			print 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)
-			data = str(humidity, temperature)
+			data = str(humidity) + ":" + str(temperature)
 			errorCode = 0
 		else:
 			print 'Failed to get a reading from the DHT11'
@@ -162,11 +163,13 @@ class EchoBot(sleekxmpp.ClientXMPP):
                    how it may be used.
         """
         if msg['type'] in ('chat', 'normal'):
+	   print 'Recieved Message'
 	   MSG = parsing(msg)
 
 	   if MSG['functionId'] == '7211':
+		print 'Recieved a 7211 Message'
 	        SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
-		response = MSG['functionID'] + ',' + SensorData['errorCode'] + ',' + MSG['ncapIds'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + SensorData['data']
+		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 		xmpp_send(str(msg['from']), response)
 
 if __name__ == '__main__':
@@ -196,9 +199,9 @@ if __name__ == '__main__':
                         format='%(levelname)-8s %(message)s')
 
     if opts.jid is None:
-        opts.jid = 'client1@jahschwa.com'
+        opts.jid = 'ncap@jahschwa.com'
     if opts.password is None:
-        opts.password = 'Password1'
+        opts.password = 'password'
 
     # Setup the EchoBot and register plugins. Note that while plugins may
     # have interdependencies, the order in which you register them does
