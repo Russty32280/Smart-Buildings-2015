@@ -10,6 +10,9 @@ import Adafruit_DHT
 import time
 import RPi.GPIO as io
 import thread
+import serial
+
+LEDState = '0;0;0;0'
 
 io.setmode(io.BCM)
 
@@ -53,6 +56,22 @@ else:
 
 #######################################################
 
+# UART function
+def readlineCR(port):
+        ch = port.read()
+        rv = ''
+        n = 0
+        while (ch!='!') & (ch!='\r'): # & (ch!=''):
+
+                rv += ch
+                ch = port.read()
+                n = n + 1
+        print  'rv: %s',rv
+        return rv
+
+
+
+
 # xmpp send function
 def xmpp_send(toAddr,myMsg,**key):
     type = 'Normal'
@@ -75,60 +94,88 @@ def xmpp_send(toAddr,myMsg,**key):
 # a single point of data. This function would be the only one you need to change in terms
 # of your own design.
 
-def ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode):
+def ReadTransducerSampleDataFromAChannelOfATIM(timId, channelId, timeout, samplingMode):
 	# Since we have the DHT11, we have one sensor responsible for both temperature and humidity.
 	print 'I MADE IT TO THE FUNCTION'
-	if channelId == '1' or channelId == '2':
-		# If you can spare the sampling time, .read_retry will attempt for 2 seconds to read the values
-		humidity, temperature = Adafruit_DHT.read_retry(Channel1_Sensor, Channel1_GPIO)
-		# Due to the nature of the one wire interface, occasionally a measurment in not obtained.
-		# In this case, we respond back to the user with an empty data field and an error code.
-		if humidity is not None and temperature is not None:
-			print 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)
-			if channelId == '1':
-				data = str(temperature)
-			elif channelId == '2':
-				data = str(humidity)
-			#data = str(humidity) + ":" + str(temperature)
-			errorCode = 0
-		else:
-			print 'Failed to get a reading from the DHT11'
-			data = ''
-			# We are assuming that a non-zero errorCode means there is a problem
-			errorCode = 1
+	
 
-	if channelId == '3':
-		if io.input(Channel3_GPIO):
-			print("Occupancy Detected")
-			data = 1
-		elif io.input(Channel3_GPIO) == 0:
-			print("Empty")
-			data = 0
-		# There needs to be errorhandling incase a problem arises in the PIR
-		errorCode = 0
+	if timId == '1':
+		if channelId == '1' or channelId == '2':
+			# If you can spare the sampling time, .read_retry will attempt for 2 seconds to read the values
+			humidity, temperature = Adafruit_DHT.read_retry(Channel1_Sensor, Channel1_GPIO)
+			# Due to the nature of the one wire interface, occasionally a measurment in not obtained.
+			# In this case, we respond back to the user with an empty data field and an error code.
+			if humidity is not None and temperature is not None:
+				print 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)
+				if channelId == '1':
+					data = str(temperature)
+				elif channelId == '2':
+					data = str(humidity)
+				#data = str(humidity) + ":" + str(temperature)
+				errorCode = 0
+			else:
+				print 'Failed to get a reading from the DHT11'
+				data = ''
+				# We are assuming that a non-zero errorCode means there is a problem
+				errorCode = 1
 
-	if channelId == '5' or channelId == '6':
-		if channelId == '5':
-			rawData = spi.xfer([1, (8+Channel5_SPI) << 4, 0])
-		elif channelId == '6':
-			rawData = spi.xfer([1, (8+Channel6_SPI) << 4, 0])
-		
-		data = str(((rawData[1]&3) << 8) + rawData[2])
-		
-		if data == '0':
-			errorCode = 1
-		elif data == '1023':
-			errorCode = 2
-		else:
+		if channelId == '3':
+			if io.input(Channel3_GPIO):
+				print("Occupancy Detected")
+				data = 1
+			elif io.input(Channel3_GPIO) == 0:
+				print("Empty")
+				data = 0
+			# There needs to be errorhandling incase a problem arises in the PIR
 			errorCode = 0
 
-	return {'errorCode':errorCode, 'data':data}
+		
+		if channelId == '4':
+			global LEDState
+			data = LEDState
+			errorCode = 0
+		
+		if channelId == '5' or channelId == '6':
+			if channelId == '5':
+				rawData = spi.xfer([1, (8+Channel5_SPI) << 4, 0])
+			elif channelId == '6':
+				rawData = spi.xfer([1, (8+Channel6_SPI) << 4, 0])
+		
+			data = str(((rawData[1]&3) << 8) + rawData[2])
+		
+			if data == '0':
+				errorCode = 1
+			elif data == '1023':
+				errorCode = 2
+			else:
+				errorCode = 0
+
+		return {'errorCode':errorCode, 'data':data}
+
+
+	elif timId == '2':
+		if channelId == '1':
+			print 'Channel 1 Tim 2'
+			UARTport.flushInput()
+			print 'Flushed Input'
+			UARTport.write('distance')
+			print 'Wrote to the port'
+			data = readlineCR(UARTport)
+			print data
+			errorCode = 0
+			return {'errorCode':errorCode, 'data':data}
+		if channelId == '2':
+			UARTport.flushInput()
+			UARTport.write('led')
+			return {'errorCode':'0', 'data':'worked'}
+
+
 
 
 # This is the function which is called by the '7213' message. Unlike the single channel read, the
 # channelId is actually a string containing ";" seperated channels.
 
-def ReadTransducerSampleDataFromMultipleChannelsOfATIM(channelId, timeout, samplingMode):
+def ReadTransducerSampleDataFromMultipleChannelsOfATIM(timId, channelId, timeout, samplingMode):
 	ChannelIDS = channelId.split(";")
 	
 	# Initializing the data list
@@ -137,7 +184,7 @@ def ReadTransducerSampleDataFromMultipleChannelsOfATIM(channelId, timeout, sampl
 	# We have a flag which allows us to track whether or not the value in question is the first value found.
 	FirstValue = 0
 	for ChannelID in ChannelIDS:
-		DATA = ReadTransducerSampleDataFromAChannelOfATIM(ChannelID, timeout, samplingMode)
+		DATA = ReadTransducerSampleDataFromAChannelOfATIM(timId, ChannelID, timeout, samplingMode)
 		# This chunk of logic keeps the resulting data looking very pretty.
 		if FirstValue == 0:
 			data = data + str(DATA['data'])
@@ -153,18 +200,18 @@ def ReadTransducerSampleDataFromMultipleChannelsOfATIM(channelId, timeout, sampl
 
 
 # This function is called when a '7212' message is recieved.
-def ReadTransducerBlockDataFromAChannelOfATIM(channelId, timeout, numberOfSamples, sampleInterval, startTime):
+def ReadTransducerBlockDataFromAChannelOfATIM(timId, channelId, timeout, numberOfSamples, sampleInterval, startTime):
 	time.sleep(int(startTime))
 	BlockData = ""
 	samplingMode = '5'
 	for num in range(0,int(numberOfSamples)):
-		BlockData = BlockData + str(ReadTransducerSampleDataFromAChannelOfATIM(channelId, timeout, samplingMode)['data']) + ';'
+		BlockData = BlockData + str(ReadTransducerSampleDataFromAChannelOfATIM(timId,channelId, timeout, samplingMode)['data']) + ';'
 		time.sleep(int(sampleInterval))
 	errorCode = 0
 	return{'errorCode':errorCode, 'data':BlockData}
 
 
-def ReadTransducerBlockDataFromMultipleChannelsOfATIM(channelId, timeout, numberOfSamples, sampleInterval, startTime):
+def ReadTransducerBlockDataFromMultipleChannelsOfATIM(timId, channelId, timeout, numberOfSamples, sampleInterval, startTime):
 	channelIds = channelId.split(";")
 	time.sleep(int(startTime))
 	samplingMode = '5'
@@ -172,7 +219,7 @@ def ReadTransducerBlockDataFromMultipleChannelsOfATIM(channelId, timeout, number
 	for SampleNum in range(0,int(numberOfSamples)):
 		for ChanNum in range(0,len(channelIds)):
 		#	print ChanNum
-			BlockData[ChanNum] = BlockData[ChanNum] + ";" + str(ReadTransducerSampleDataFromAChannelOfATIM(channelIds[ChanNum], timeout, samplingMode)['data']) 
+			BlockData[ChanNum] = BlockData[ChanNum] + ";" + str(ReadTransducerSampleDataFromAChannelOfATIM(timId, channelIds[ChanNum], timeout, samplingMode)['data']) 
 		
 		time.sleep(int(sampleInterval))
 	errorCode = 0
@@ -185,10 +232,11 @@ def ReadTransducerBlockDataFromMultipleChannelsOfATIM(channelId, timeout, number
 
 
 
-def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, dataValue):
+def WriteTransducerSampleDataToAChannelOfATIM(timId, channelId, timeout, samplingMode, dataValue):
         
         if channelId == '4':
-                
+                global LEDState
+		LEDState = dataValue
 		data = dataValue.split(";")
 		for num in range(0,len(data)):
 			if data[num] == '1':
@@ -211,12 +259,12 @@ def WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, 
         return {'errorCode':ErrorCode}
 
 
-def WriteTransducerBlockDataToAChannelOfATIM(channelId, timeout, numberOfSamples, sampleInterval, startTime, dataValue):
+def WriteTransducerBlockDataToAChannelOfATIM(timId, channelId, timeout, numberOfSamples, sampleInterval, startTime, dataValue):
 	data = dataValue.split(":")
 	time.sleep(int(startTime))
 	samplingMode = '5'
 	for num in range(0,int(numberOfSamples)):
-		errorCode = str(WriteTransducerSampleDataToAChannelOfATIM(channelId, timeout, samplingMode, data[num]))
+		errorCode = str(WriteTransducerSampleDataToAChannelOfATIM(timId, channelId, timeout, samplingMode, data[num]))
 		time.sleep(float(sampleInterval)/1000)
 	print errorCode
 	return{'errorCode':errorCode}
@@ -232,39 +280,39 @@ def WriteTransducerBlockDataToAChannelOfATIM(channelId, timeout, numberOfSamples
 
 def Thread7211(MSG_Tuple, SenderInfo): 
         MSG = dict(map(None, MSG_Tuple))
-        SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
+	SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
 	response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 	xmpp_send(str(SenderInfo[1]), response)
 
 def Thread7212(MSG_Tuple, SenderInfo):
         MSG = dict(map(None, MSG_Tuple))
-	SensorData = ReadTransducerBlockDataFromAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
+	SensorData = ReadTransducerBlockDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
         response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 	xmpp_send(str(SenderInfo[1]), response)
 
 def Thread7213(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
-        SensorData = ReadTransducerSampleDataFromMultipleChannelsOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode'])
+        SensorData = ReadTransducerSampleDataFromMultipleChannelsOfATIM(MSG['timId'], MSG['channelId'], MSG['timeout'], MSG['samplingMode'])
         response =  MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
         xmpp_send(str(SenderInfo[1]), response)
 
 def Thread7214(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
-        SensorData = ReadTransducerBlockDataFromMultipleChannelsOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
+        SensorData = ReadTransducerBlockDataFromMultipleChannelsOfATIM(MSG['timId'], MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
         response =  MSG['functionId'] +  ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' +  str(SensorData['data'])
-        xmpp_send(str(msg['from']), response)
+        xmpp_send(str(SenderInfo[1]), response)
 
 def Thread7217(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
-        ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
+        ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['timId'], MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
         response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
-        xmpp_send(str(msg['from']), response)
+        xmpp_send(str(SenderInfo[1]), response)
 	
 def Thread7218(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
-        ErrorCode = WriteTransducerBlockDataToAChannelOfATIM(MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'], MSG['dataValue'])
+        ErrorCode = WriteTransducerBlockDataToAChannelOfATIM(MSG['timId'], MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'], MSG['dataValue'])
         response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
-        xmpp_send(str(msg['from']), response)
+        xmpp_send(str(SenderInfo[1]), response)
 
 
 ##############################################################
@@ -333,6 +381,10 @@ class EchoBot(sleekxmpp.ClientXMPP):
        
 	self.send_presence()
         self.get_roster()
+
+	global UARTport
+	UARTport = serial.Serial("/dev/ttyAMA0", baudrate=9600, timeout=0.25)
+
 
     def message(self, msg):
         """
