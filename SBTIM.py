@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import xml.etree.ElementTree as ET
+import urllib2
 import sys
 import spidev
 import logging
@@ -88,6 +90,136 @@ def xmpp_send(toAddr,myMsg,**key):
 
 
 
+def NCAPClientUnJoin(NCAP_ID):
+        #print ServiceType
+        #print NCAP_ID
+        """
+        Checks to see if user is registered.
+        Registers the user if a request is recieved.
+        Unsubcribes if reques is recieved.
+
+        returns FALSE for unregistered, TRUE for registered.
+        """
+        OnRoster=0
+
+        tree = ET.parse('roster.xml')
+
+        root = tree.getroot()
+
+        # We need to replace this name with the jid from an incoming message
+       # print name
+
+        # This message needs to be extracted from the sleekxmpp library
+        #message = msg['body']
+        #print message
+
+        # Setting our list to an empty array
+        jid = []
+
+        #We need to find all of our users in our roster and then we can find the JID attribute
+        for user in root.findall('user'):
+            jid.append(user.find('jid').text)
+            #print(jid)
+
+        # Check to see if the jid is in our list. If it is, we will respond to the message.
+        try:
+            OnRoster = 1
+            jid.index(NCAP_ID)
+            #print position
+        except:
+            # The .index function throws an error if there is no match, so we will use this as
+            #our non-subscribed option.
+            OnRoster = -1
+
+        if OnRoster >= 0:
+            print('Unsubscription Request Recieved')
+    #We need to find all of our users in our roster and then we can find the JID attribute
+            for user in root.findall('user'):
+                test12= (user.find('jid').text)
+                if test12 == NCAP_ID:
+                    root.remove(user)
+                    unsub=1
+            tree.write('roster.xml')
+
+        return OnRoster
+
+#####################################
+
+def NCAPClientJoin(NCAP_ID):
+
+    """
+    Checks to see if user is registered.
+    Registers the user if a request is recieved.
+    Unsubcribes if reques is recieved.
+
+    returns FALSE for unregistered, TRUE for registered.
+    """
+    OnRoster=0
+
+    tree = ET.parse('roster.xml')
+
+    root = tree.getroot()
+
+    # We need to replace this name with the jid from an incoming message
+   # print name
+
+    # This message needs to be extracted from the sleekxmpp library
+    #message = msg['body']
+    #print message
+
+    # Setting our list to an empty array
+    jid = []
+
+    #We need to find all of our users in our roster and then we can find the JID attribute
+    for user in root.findall('user'):
+        jid.append(user.find('jid').text)
+        #print(jid)
+
+    # Check to see if the jid is in our list. If it is, we will respond to the message.
+    try:
+        jid.index(NCAP_ID)
+        OnRoster = 1
+        #print position
+    except:
+        # The .index function throws an error if there is no match, so we will use this as
+        #our non-subscribed option.
+        OnRoster = -1
+        #ServiceType=='7108':
+        print('Subscription Request Recieved')
+        newuser = ET.Element("user")
+        newuser.text = '\n'
+        root.append(newuser)
+        newuser.set('subscription', 'true')
+        jabber=ET.Element("jid")
+        newuser.append(jabber)
+        jabber.text='%s' %(NCAP_ID)
+        tree.write('roster.xml')
+
+    return (OnRoster)*-1
+##############################################################
+
+
+def RosterCheck(NCAP_ID):
+	tree = ET.parse('roster.xml')
+	root = tree.getroot()
+	jid = []
+	Permission = 0
+
+	for user in root.findall('user'):
+		jid.append(user.find('jid').text)
+
+	try:
+		jid.index(NCAP_ID)
+		Permission = 1
+	except:
+		Permission = 0
+	return(Permission)
+
+
+
+
+
+
 # This is the workhorse of all the read functions in this section. Thie method
 # takes in a channelId, a timeout value, and what samplingmode is needed. This function
 # is called upon when a '7211' message is recieved from the client. It returns back
@@ -96,7 +228,7 @@ def xmpp_send(toAddr,myMsg,**key):
 
 def ReadTransducerSampleDataFromAChannelOfATIM(timId, channelId, timeout, samplingMode):
 	# Since we have the DHT11, we have one sensor responsible for both temperature and humidity.
-	print 'I MADE IT TO THE FUNCTION'
+	print 'Read Transducer Sample Data'
 	
 
 	if timId == '1':
@@ -278,11 +410,27 @@ def WriteTransducerBlockDataToAChannelOfATIM(timId, channelId, timeout, numberOf
 # Threading Functions
 #############################################################
 
+def Thread7108(MSG_Tuple, SenderInfo):
+	MSG = dict(map(None, MSG_Tuple))
+	OnRoster = NCAPClientJoin(SenderInfo[1])
+	response = MSG['functionId'] + ',' + str(OnRoster) + ',' + 'You are already registered'
+	xmpp_send(str(SenderInfo[1]), response)
+
+def Thread7109(MSG_Tuple, SenderInfo):
+	MSG = dict(map(None, MSG_Tuple))
+	OnRoster = NCAPClientUnjoin(SenderInfo[1])
+	response = MSG['functionId'] + ',' + str(OnRoster) + ',' + 'You were not on the roster'
+	xmpp_send(str(SenderInfo[1]), response)	
+
+
 def Thread7211(MSG_Tuple, SenderInfo): 
         MSG = dict(map(None, MSG_Tuple))
+#	if RosterCheck(SenderInfo[1]) == 1:
 	SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
 	response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
 	xmpp_send(str(SenderInfo[1]), response)
+#	elif RosterCheck(SenderInfo[1]) == 0:
+#		xmpp_send(str(SenderInfo[1]), 'ERROR: Not a registered user')
 
 def Thread7212(MSG_Tuple, SenderInfo):
         MSG = dict(map(None, MSG_Tuple))
@@ -322,6 +470,8 @@ def MessageParse(msg):
 	parse = stringy.split(",")
 	functionId = parse[0]
 	print functionId
+	if functionId == '7108' or functionId == '7109':
+		return {'functionId':functionId}
 	ncapId =  parse[1]
 	timId =  parse[2]
 	channelId =  parse[3]
@@ -400,6 +550,15 @@ class EchoBot(sleekxmpp.ClientXMPP):
         if msg['type'] in ('chat', 'normal'):
 	   print 'Recieved Message'
 	   MSG = MessageParse(msg)
+	   
+	   if MSG['functionId']=='7108':
+		print 'Recieved a 7108 message'
+		thread.start_new_thread(Thread7108, (tuple(MSG.items()), ('from', msg['from'])))
+
+           if MSG['functionId']=='7109':
+                print 'Recieved a 7109 message'
+                thread.start_new_thread(Thread7108, (tuple(MSG.items()), ('from', msg['from'])))
+	
 
 	   if MSG['functionId'] == '7211':
 		print 'Recieved a 7211 Message'
