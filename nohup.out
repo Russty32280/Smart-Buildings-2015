@@ -1,0 +1,2823 @@
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/f991bd14-4482-41ef-ab37-1c6f31801aa8
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Empty
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 
+
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 17.37
+17.37
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Recieved Message
+7212
+I am in the nested if statement
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.48
+16.48
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.48
+16.48
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.58
+16.58
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.55
+16.55
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.55
+16.55
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.48
+16.48
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 14.9
+14.9
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.96
+16.96
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.55
+16.55
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.56
+16.56
+Recieved Message
+7212
+I am in the nested if statement
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=29.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=24.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=25.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=25.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=25.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=26.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+ReadERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0xd76170>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 483, in MessageParse
+    startTime = parse[7]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 483, in MessageParse
+    startTime = parse[7]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 483, in MessageParse
+    startTime = parse[7]
+IndexError: list index out of range
+ Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=28.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.16
+16.16
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=27.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.62
+16.62
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+rv: %s 16.58
+16.58
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=24.0%
+Recieved Message
+7212
+I am in the nested if statement
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Recieved Message
+7217
+Recieved Message
+7212
+I am in the nested if statement
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=18.0%
+Read Transducer Sample Data
+TemSBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/c7e9735e-4ef4-4557-a242-b40a8f35793b
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+Unhandled exception in thread started by <function Thread7217 at 0x12283b0>
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=23.0*C  Humidity=24.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=23.0*C  Humidity=24.0%
+Recieved Message
+7217
+Traceback (most recent call last):
+  File "SBTIM.py", line 455, in Thread7217
+    ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['timId'], MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
+  File "SBTIM.py", line 391, in WriteTransducerSampleDataToAChannelOfATIM
+    return {'errorCode':ErrorCode}
+UnboundLocalError: local variable 'ErrorCode' referenced before assignment
+Unhandled exception in thread started by <function Thread7211 at 0x12282b0>
+Recieved Message
+7217
+Recieved Message
+7217
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=24.0*C  Humidity=23.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Traceback (most recent call last):
+  File "SBTIM.py", line 429, in Thread7211
+    SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
+  File "SBTIM.py", line 285, in ReadTransducerSampleDataFromAChannelOfATIM
+    return {'errorCode':errorCode, 'data':data}
+UnboundLocalError: local variable 'errorCode' referenced before assignment
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/45838851-673a-4772-b891-3353a28f0762
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/5bda36a9-9852-46e0-9104-21411037868b
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/5d323e48-5fdf-4a2d-95bb-54d0f0d069f8
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/6a500de6-9537-4fa0-9803-1e1bc967c5a6
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/d303ac92-d749-4b37-9b53-0424cbff63e3
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/e3239f0c-a627-4d80-95dd-40bd03336226
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/17c95f92-b3c0-47b5-9049-263152cd6c8f
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #110: Connection timed out
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/54204e82-d2fd-45eb-8f3d-1e753efcba6b
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/61a8a801-5f40-42ec-a6dc-2b72b021c7f9
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/96565835-732b-42a4-9402-c6ff0ec06c15
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/c7457fd4-a1e3-48e8-af23-52937193e248
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/82e3d8d3-be8a-4a55-894d-3ea0a05f4d43
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/f98b0725-8867-422a-84d0-018229c1abce
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Socket Error #110: Connection timed out
+WARNING  Failed to send </stream:stream>
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/2c923fd6-fd95-4a76-9b2a-b1cea2415f34
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/6a5a9344-73e6-4620-91a2-9e72c8efeee3
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x2242170>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 490, in MessageParse
+    dataValue = parse[6]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 490, in MessageParse
+    dataValue = parse[6]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 490, in MessageParse
+    dataValue = parse[6]
+IndexError: list index out of range
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=17.0*C  Humidity=21.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Empty
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Empty
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=19.0*C  Humidity=20.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Empty
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7217
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=19.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=19.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=20.0*C  Humidity=20.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Empty
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=19.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Channel 1 Tim 2
+Flushed Input
+Wrote to the port
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=19.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=8.0%
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Occupancy Detected
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Recieved Message
+7212
+I am in the nested if statement
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=19.0%
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=21.0*C  Humidity=19.0%
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer Sample Data
+Read Transducer INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #111: Connection refused
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/adec9ca8-ce81-4a8d-8220-e97e5401d968
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x2242170>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 475, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 475, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 552, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 475, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/16923198-19b2-4c45-a5ec-f1c75e5b4423
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+Unhandled exception in thread started by <function Thread7109 at 0x202d270>
+Recieved Message
+7109
+Recieved a 7109 message
+Traceback (most recent call last):
+  File "SBTIM.py", line 421, in Thread7109
+    OnRoster = NCAPClientUnjoin(SenderInfo[1])
+NameError: global name 'NCAPClientUnjoin' is not defined
+Unhandled exception in thread started by <function Thread7109 at 0x202d270>
+Recieved Message
+7108
+Recieved a 7108 message
+Recieved Message
+7109
+Recieved a 7109 message
+Traceback (most recent call last):
+  File "SBTIM.py", line 421, in Thread7109
+    OnRoster = NCAPClientUnjoin(SenderInfo[1])
+NameError: global name 'NCAPClientUnjoin' is not defined
+INFO     Waiting for </stream:stream> from server
+Recieved Message
+7211
+Recieved a 7211 Message
+Read Transducer Sample Data
+Temp=22.0*C  Humidity=19.0%
+Done
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/b0428ddc-d514-4c32-a930-c5ed1c62ed56
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/2251ccfa-7359-4dc8-9448-d35035c93135
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.

@@ -404,6 +404,16 @@ def WriteTransducerBlockDataToAChannelOfATIM(timId, channelId, timeout, numberOf
 
 
 
+#############################################################
+#       EVENT NOTIFICATION SERVICES
+#############################################################
+
+"""
+def SubscribeSensorAlertService(timID, channelId, minMaxThreshold, sensorAlertSubscriber, samplingRate):
+    # We need to possibly have another xml which manages this.
+    
+
+"""
 
 
 #############################################################
@@ -413,30 +423,30 @@ def WriteTransducerBlockDataToAChannelOfATIM(timId, channelId, timeout, numberOf
 def Thread7108(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
 	OnRoster = NCAPClientJoin(SenderInfo[1])
-	response = MSG['functionId'] + ',' + str(OnRoster) + ',' + 'You are already registered'
+	response = MSG['functionId'] + ',' + str(OnRoster) + ',' + 'You have been registered'
 	xmpp_send(str(SenderInfo[1]), response)
 
 def Thread7109(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
-	OnRoster = NCAPClientUnjoin(SenderInfo[1])
-	response = MSG['functionId'] + ',' + str(OnRoster) + ',' + 'You were not on the roster'
+	OnRoster = NCAPClientUnJoin(SenderInfo[1])
+	response = MSG['functionId'] + ',' + str(OnRoster) + ',' + 'You have been removed from the Roster'
 	xmpp_send(str(SenderInfo[1]), response)	
 
 
 def Thread7211(MSG_Tuple, SenderInfo): 
         MSG = dict(map(None, MSG_Tuple))
-#	if RosterCheck(SenderInfo[1]) == 1:
-	SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
-	response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
-	xmpp_send(str(SenderInfo[1]), response)
-#	elif RosterCheck(SenderInfo[1]) == 0:
-#		xmpp_send(str(SenderInfo[1]), 'ERROR: Not a registered user')
+	if RosterCheck(SenderInfo[1]) == 1:
+		SensorData = ReadTransducerSampleDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'],MSG['timeout'],MSG['samplingMode'])
+		response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' +MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
+		xmpp_send(str(SenderInfo[1]), response)
+	elif RosterCheck(SenderInfo[1]) == 0:
+		xmpp_send(str(SenderInfo[1]), 'ERROR: Not a registered user')
 
 def Thread7212(MSG_Tuple, SenderInfo):
         MSG = dict(map(None, MSG_Tuple))
-	SensorData = ReadTransducerBlockDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
+    	SensorData = ReadTransducerBlockDataFromAChannelOfATIM(MSG['timId'],MSG['channelId'], MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'])
         response = MSG['functionId'] + ',' + str(SensorData['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' + str(SensorData['data'])
-	xmpp_send(str(SenderInfo[1]), response)
+    	xmpp_send(str(SenderInfo[1]), response)
 
 def Thread7213(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
@@ -462,6 +472,14 @@ def Thread7218(MSG_Tuple, SenderInfo):
         response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
         xmpp_send(str(SenderInfo[1]), response)
 
+###
+# Place the Thread here
+#def Thread7431(MSP_Tuple, SenderInfo)
+#    MSG = dict(map(MSG_Tuple))
+#       Status = SubscribeSensorAlertService(MSG['timID'],MSG['channelId'],MSG['minMaxThreshold'],MSG['sensorAlertSubscriber'], MSG['samplingRate'])
+#       response = MSG['status']+ ',' + MSG['sensorAlertPublisher']+ ',' + MSG['subscriptionId']
+#       xmpp_send(str(SenderInfo[1],response))
+
 
 ##############################################################
 
@@ -475,9 +493,14 @@ def MessageParse(msg):
 	ncapId =  parse[1]
 	timId =  parse[2]
 	channelId =  parse[3]
+#	if functionId == '7421':
+#	    minMaxThreshold = parse[4]
+#	    sensorAlertSubscriber = parse[5]
+#       samplingRate=parse[6]
+#       return {'functionId':functionId, 'ncapId':ncapId, 'timId':timId, 'channelId':channelId, 'minMaxThreshold':minMaxThreshold, 'sensorAlertSubscriber':sensorAlertSubscriber, 'samplingRate':samplingRate }
 	timeout =  parse[4]
 	if functionId == '7212' or functionId == '7214' or functionId == '7218':
-		print 'I am in the nested if statement'
+		#print 'I am in the nested if statement'
 		numberOfSamples = parse[5]
 		sampleInterval = parse[6]
 		startTime = parse[7]
@@ -557,7 +580,7 @@ class EchoBot(sleekxmpp.ClientXMPP):
 
            if MSG['functionId']=='7109':
                 print 'Recieved a 7109 message'
-                thread.start_new_thread(Thread7108, (tuple(MSG.items()), ('from', msg['from'])))
+                thread.start_new_thread(Thread7109, (tuple(MSG.items()), ('from', msg['from'])))
 	
 
 	   if MSG['functionId'] == '7211':
@@ -634,4 +657,3 @@ if __name__ == '__main__':
         print("Done")
     else:
         print("Unable to connect.")
-
