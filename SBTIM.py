@@ -13,6 +13,8 @@ import time
 import RPi.GPIO as io
 import thread
 import serial
+from threading import Timer
+
 
 LEDState = '0;0;0;0'
 
@@ -357,9 +359,24 @@ def ReadTransducerBlockDataFromMultipleChannelsOfATIM(timId, channelId, timeout,
 	errorCode = 0
 	data = ''
 	for ChanNum in range(0,len(channelIds)):
-		data = data + '{' + BlockData[ChanNum] + '}' 
+		data = data + '{' + BlockData[ChanNum] + '}'
+		
+	print(data)
 	return{'errorCode':errorCode, 'data':data}
 
+
+"""
+def ReadTransducerBlockDataFromMultipleChannelsOfMultipleTIMs(timIds, numberOfChannelsOfTIM, channelIds, timeout, numberOfSamples, sampleInterval, startTime)
+    channelIds = channelIds.split(";")
+    timIds = timIds.split(";")
+    samplingMode = '5'
+    
+    
+
+    return {'errorCode':errorCode, 'data':data}
+
+
+"""
 
 
 
@@ -375,7 +392,7 @@ def WriteTransducerSampleDataToAChannelOfATIM(timId, channelId, timeout, samplin
 				io.output(Channel4_GPIO[num], True)
 			elif data[num] == '0':
 				io.output(Channel4_GPIO[num], False)
-		ErrorCode = '0'
+		errorCode = '0'
 			
 		
 		#if dataValue == '1':
@@ -388,7 +405,7 @@ def WriteTransducerSampleDataToAChannelOfATIM(timId, channelId, timeout, samplin
                 #        print 'LED OFF'
                 #else:
                 #        ErrorCode = 1
-        return {'errorCode':ErrorCode}
+        return {'errorCode':errorCode}
 
 
 def WriteTransducerBlockDataToAChannelOfATIM(timId, channelId, timeout, numberOfSamples, sampleInterval, startTime, dataValue):
@@ -409,12 +426,16 @@ def WriteTransducerBlockDataToAChannelOfATIM(timId, channelId, timeout, numberOf
 #############################################################
 
 """
-def SubscribeSensorAlertService(timID, channelId, minMaxThreshold, sensorAlertSubscriber, samplingRate):
+def SubscribeSensorAlertService(timId, channelId, minMaxThreshold, sensorAlertSubscriber, samplingRate):
     # We need to possibly have another xml which manages this.
+    
+    
+    
+    return{'
+    
     
 
 """
-
 
 #############################################################
 # Threading Functions
@@ -460,6 +481,14 @@ def Thread7214(MSG_Tuple, SenderInfo):
         response =  MSG['functionId'] +  ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId'] + ',' +  str(SensorData['data'])
         xmpp_send(str(SenderInfo[1]), response)
 
+"""        
+def Thread7216(MSG_Tuple, SenderInfo):
+    	MSG =  dict(map(None, MSG_Tuple))
+        SensorData = ReadTranducerBlockDataFromMultipleChannelsOfMultipleTIMs(MSG['timIds'],MSG['channelIds', MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'] )
+        response = str(ErrorCode['errorCode'])+ ',' + MSG['ncapId'] + ',' + MSG['timIds'] + MSG['numberOfChannelsOfTIM'] + ',' + MSG['channelIds'] + ',' + MSG['transducerBlockDatas']
+        xmpp_send(str(SenderInfo[1]), response)
+"""
+
 def Thread7217(MSG_Tuple, SenderInfo):
 	MSG = dict(map(None, MSG_Tuple))
         ErrorCode = WriteTransducerSampleDataToAChannelOfATIM(MSG['timId'], MSG['channelId'], MSG['timeout'], MSG['samplingMode'], MSG['dataValue'])
@@ -472,11 +501,13 @@ def Thread7218(MSG_Tuple, SenderInfo):
         response = MSG['functionId']+ ',' + str(ErrorCode['errorCode']) + ',' + MSG['ncapId'] + ',' + MSG['timId'] + ',' + MSG['channelId']
         xmpp_send(str(SenderInfo[1]), response)
 
+
+
 ###
 # Place the Thread here
 #def Thread7431(MSP_Tuple, SenderInfo)
 #    MSG = dict(map(MSG_Tuple))
-#       Status = SubscribeSensorAlertService(MSG['timID'],MSG['channelId'],MSG['minMaxThreshold'],MSG['sensorAlertSubscriber'], MSG['samplingRate'])
+#       Status = SubscribeSensorAlertService(MSG['timId'],MSG['channelId'],MSG['minMaxThreshold'],MSG['sensorAlertSubscriber'], MSG['samplingRate'])
 #       response = MSG['status']+ ',' + MSG['sensorAlertPublisher']+ ',' + MSG['subscriptionId']
 #       xmpp_send(str(SenderInfo[1],response))
 
@@ -572,35 +603,39 @@ class EchoBot(sleekxmpp.ClientXMPP):
         """
         if msg['type'] in ('chat', 'normal'):
 	   print 'Recieved Message'
-	   MSG = MessageParse(msg)
+        MSG = MessageParse(msg)
+	   #jabberid=msg['from']
+	   #RC=RosterCheck(ncapId)
+       # if(RC==0):
+       #     xmpp_send(str(SenderInfo[1]), response)
 	   
-	   if MSG['functionId']=='7108':
+	if MSG['functionId']=='7108':
 		print 'Recieved a 7108 message'
 		thread.start_new_thread(Thread7108, (tuple(MSG.items()), ('from', msg['from'])))
 
-           if MSG['functionId']=='7109':
+        if MSG['functionId']=='7109':
                 print 'Recieved a 7109 message'
                 thread.start_new_thread(Thread7109, (tuple(MSG.items()), ('from', msg['from'])))
 	
 
-	   if MSG['functionId'] == '7211':
+	if MSG['functionId'] == '7211':
 		print 'Recieved a 7211 Message'
 	        thread.start_new_thread(Thread7211, (tuple(MSG.items()), ('from', msg['from'])))
 
-	   if MSG['functionId'] == '7212':
+	if MSG['functionId'] == '7212':
 		thread.start_new_thread(Thread7212, (tuple(MSG.items()), ('from', msg['from'])))
 
-	   if MSG['functionId'] == '7213':
+	if MSG['functionId'] == '7213':
 		thread.start_new_thread(Thread7213, (tuple(MSG.items()), ('from', msg['from'])))
 
-	   if MSG['functionId'] == '7214':
+	if MSG['functionId'] == '7214':
 		thread.start_new_thread(Thread7214, (tuple(MSG.items()), ('from', msg['from'])))
 
 
-           if MSG['functionId'] == '7217':
+        if MSG['functionId'] == '7217':
                 thread.start_new_thread(Thread7217, (tuple(MSG.items()), ('from', msg['from'])))
 
-	   if MSG['functionId'] == '7218':
+	if MSG['functionId'] == '7218':
 		thread.start_new_thread(Thread7218, (tuple(MSG.items()), ('from', msg['from'])))
 
 

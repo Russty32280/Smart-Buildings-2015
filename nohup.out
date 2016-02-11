@@ -2821,3 +2821,15 @@ INFO     Using SSL version: TLS 1.0
 WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
 INFO     JID set to: ncap@jahschwa.com/2251ccfa-7359-4dc8-9448-d35035c93135
 WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+  File "SBTIM.py", line 484
+    SensorData = ReadTranducerBlockDataFromMultipleChannelsOfMultipleTIMs(MSG['timIds'],MSG['channelIds', MSG['timeout'], MSG['numberOfSamples'], MSG['sampleInterval'], MSG['startTime'] )
+    ^
+IndentationError: unexpected indent
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/5343be10-939a-4b4b-8073-073c4896c841
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
