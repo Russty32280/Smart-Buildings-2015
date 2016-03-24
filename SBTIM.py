@@ -13,8 +13,6 @@ import time
 import RPi.GPIO as io
 import thread
 import serial
-from threading import Timer
-
 
 LEDState = '0;0;0;0'
 
@@ -89,7 +87,6 @@ def xmpp_send(toAddr,myMsg,**key):
         xmpp.send_message(
             mto=toAddr,mbody=myMsg,mtype='groupchat')
 ####################################################
-
 
 
 def NCAPClientUnJoin(NCAP_ID):
@@ -370,6 +367,7 @@ def ReadTransducerBlockDataFromMultipleChannelsOfMultipleTIMs(timIds, numberOfCh
     channelIds = channelIds.split(";")
     timIds = timIds.split(";")
     samplingMode = '5'
+    
     
     
 

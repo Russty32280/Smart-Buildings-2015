@@ -2833,3 +2833,236 @@ INFO     Using SSL version: TLS 1.0
 WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
 INFO     JID set to: ncap@jahschwa.com/5343be10-939a-4b4b-8073-073c4896c841
 WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+SBTIM.py:35: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  io.setup(Channel4_GPIO, io.OUT)
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/7cc3788b-630c-48d1-8bca-93d2fd540637
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error processing event handler: <bound method EchoBot.message of <__main__.EchoBot object at 0x1c77c30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    Error handling {jabber:client}message stanza
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+ERROR    list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sleekxmpp/xmlstream/xmlstream.py", line 1699, in _event_runner
+    func(*args)
+  File "SBTIM.py", line 604, in message
+    MSG = MessageParse(msg)
+  File "SBTIM.py", line 522, in MessageParse
+    ncapId =  parse[1]
+IndexError: list index out of range
+INFO     Waiting for </stream:stream> from server
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+ERROR    Could not connect to 173.255.230.176:5222. Socket Error #111: Connection refused
+WARNING  DNS: dnspython not found. Can not use SRV lookup.
+INFO     Negotiating TLS
+INFO     Using SSL version: TLS 1.0
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate COULD NOT BE VERIFIED.
+INFO     JID set to: ncap@jahschwa.com/2325e337-e30e-4688-833c-8c9af8b5e364
+WARNING  Could not find pyasn1 and pyasn1_modules. SSL certificate expiration COULD NOT BE VERIFIED.
