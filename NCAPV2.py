@@ -14,6 +14,9 @@ import RPi.GPIO as io
 import thread
 import serial
 
+UART = serial.Serial("/dev/ttyAMA0", baudrate=9600, timeout=0.25)
+
+
 LEDState = '0;0;0;0'
 
 io.setmode(io.BCM)
@@ -60,6 +63,7 @@ else:
 
 # UART function
 def readlineCR(port):
+	print 'ReadlineCR'
         ch = port.read()
         rv = ''
         n = 0
@@ -231,7 +235,25 @@ def ReadTransducerSampleDataFromAChannelOfATIM(timId, channelId, timeout, sampli
 	
 
 	if timId == '1':
-		if channelId == '1' or channelId == '2':
+		if len(channelId)<2:
+			channelId='00'+channelId
+		if len(channelId)<3:
+			channelId='0'+channelId
+                UARTport.flushInput()
+                print 'Flushed Input'
+		print channelId
+		UART.write('128,'+channelId+'\r')
+	#	UART.write('128,001\r')
+		data = readlineCR(UART)
+		
+
+
+	errorCode = '0'
+	#data = '1'
+        return{'errorCode':errorCode, 'data':data}
+
+
+"""		if channelId == '1' or channelId == '2':
 			# If you can spare the sampling time, .read_retry will attempt for 2 seconds to read the values
 			humidity, temperature = Adafruit_DHT.read_retry(Channel1_Sensor, Channel1_GPIO)
 			# Due to the nature of the one wire interface, occasionally a measurment in not obtained.
@@ -281,9 +303,9 @@ def ReadTransducerSampleDataFromAChannelOfATIM(timId, channelId, timeout, sampli
 			else:
 				errorCode = 0
 
-		return {'errorCode':errorCode, 'data':data}
-
-
+	return {'errorCode':errorCode, 'data':data}
+"""
+"""
 	elif timId == '2':
 		if channelId == '1':
 			print 'Channel 1 Tim 2'
@@ -301,7 +323,7 @@ def ReadTransducerSampleDataFromAChannelOfATIM(timId, channelId, timeout, sampli
 			return {'errorCode':'0', 'data':'worked'}
 
 
-
+"""
 
 # This is the function which is called by the '7213' message. Unlike the single channel read, the
 # channelId is actually a string containing ";" seperated channels.
@@ -382,16 +404,10 @@ def ReadTransducerBlockDataFromMultipleChannelsOfMultipleTIMs(timIds, numberOfCh
 def WriteTransducerSampleDataToAChannelOfATIM(timId, channelId, timeout, samplingMode, dataValue):
         
         if channelId == '4':
-                global LEDState
-		LEDState = dataValue
-		data = dataValue.split(";")
-		for num in range(0,len(data)):
-			if data[num] == '1':
-				io.output(Channel4_GPIO[num], True)
-			elif data[num] == '0':
-				io.output(Channel4_GPIO[num], False)
-		errorCode = '0'
-			
+                UART.write('001,00'+channelId+','+dataValue+'\r')
+		errorCode = 'p'
+		print('you wrote it')
+		errorCode=readlineCR(UARTport)	
 		
 		#if dataValue == '1':
                 #        io.output(Channel4_GPIO, True)
